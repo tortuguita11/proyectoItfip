@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\VerController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +21,7 @@ Route::post('/registro',[RegistroController::class, 'RegistroUsuario'])->name('a
 Route::get('/ver',[VerController::class, 'index']);
 Route::get('/ver/{id}',[VerController::class, 'verUsuario']);
 
-Route::get('/dashboard',[VerController::class, 'index'])->name('dashboard');
+Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
 
 
 

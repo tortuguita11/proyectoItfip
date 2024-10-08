@@ -43,7 +43,7 @@ class LoginController extends Controller
     {
         User::create(
             [
-                'nombre' => $data['nombre'],
+                // 'nombre' => $data['nombre'],
                 'email' => $data['email'],
                 'password' => bcrypt($data['password'])
             ]
