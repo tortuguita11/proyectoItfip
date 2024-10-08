@@ -1,0 +1,71 @@
+/* Contenedor Principal */
+.login-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Centrar el Contenido */
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sección del Logo */
+.logo-container {
+  background-color: #ffd867; /* Fondo amarillo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 300px; /* Tamaño máximo del logo */
+}
+
+/* Estilos del Formulario */
+.container {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* Estilo del Botón */
+.btn-primary {
+  background-color: #003489;
+  border-color: #003489;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #002c70;
+  border-color: #002c70;
+}
+
+/* Estilo del Enlace */
+#forgot-password {
+  color: #003489;
+  text-decoration: none;
+}
+
+#forgot-password:hover {
+  color: #002c70;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 575.98px) {
+  .login-container {
+      grid-template-columns: 100%; /* Pasa a una sola columna en dispositivos pequeños */
+  }
+
+  .logo-container {
+      display: none; /* Oculta el logo en pantallas pequeñas */
+  }
+}
